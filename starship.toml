@@ -1,0 +1,14 @@
+format = """
+
+$directory\
+$character"""
+
+[directory]
+style = "#96ffdd"
+
+[character]
+success_symbol = "[❯](#d7f67f)[❯](#96f67f)[❯](#86bbfa)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
+
