@@ -32,10 +32,15 @@ PATH=/home/chihi/.local/bin:/home/chihi/.local/share/zinit/plugins/starship---st
 #export PYENV_ROOT="$HOME/.pyenv"
 #export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin"
 #export PATH="$PYENV_ROOT/versions/3.11.2/lib/python3.11/site-packages:$PATH"
 export PATH="/home/chihi/.cargo/bin:$PATH"
 #eval "$(pyenv init --path)"
 eval $(opam env)
 
+# opam configuration
+[[ ! -r /home/chihi/.opam/opam-init/init.zsh ]] || source /home/chihi/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+. "$HOME/.cargo/env"
 # opam configuration
 [[ ! -r /home/chihi/.opam/opam-init/init.zsh ]] || source /home/chihi/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
